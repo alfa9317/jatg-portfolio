@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-// import {Animated} from "react-animated-css";
+import {Animated} from "react-animated-css";
 import { Button } from 'antd';
 
 
@@ -9,11 +9,11 @@ class Home extends React.Component {
     render(){
         return (
             <div>
-                 {/* <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={4000} isVisible={true}>
+                 <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={4000} isVisible={true}>
                     <div>
                         <h1>Hello world! ;)</h1>
                     </div>
-                </Animated> */}
+                </Animated>
                 <div>
                     <Button type="primary">Primary</Button>
                     <Button>Default</Button>
