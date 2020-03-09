@@ -16,7 +16,7 @@ state = {
     return (
         <div>
             <NavBar/>
-            <div style={{margin:'40px 100px 10px 100px'}}>
+            <div style={{margin:'40px 5vw 10px 5vw'}}>
                 {this.state.info.map(info => (
                     <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1000} isVisible={true}>
                         <InfoCard
@@ -25,6 +25,7 @@ state = {
                         name={info.name}
                         image={info.image}
                         description={info.description}
+                        url={info.url}
                         />
                     </Animated>
                 ))}

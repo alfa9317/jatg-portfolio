@@ -39,7 +39,7 @@ function InfoCard (props) {
         //         </div>
         //     </div>
         // </div>
-        <Card title={props.name} align='start' style={{margin:'20px 0 20px 0',boxShadow: '0px 1px 4px 0px #888888'}}extra={<a href="#">More</a>}>
+        <Card title={props.name} align='start' style={{margin:'20px 0 20px 0',boxShadow: '0px 1px 4px 0px #888888'}}extra={<a href={props.url} target="_blank">More</a>}>
             <Row gutter={[16,24]}>
                 <Col xs={{span: 24}} sm={{span: 24}} md={{span: 8}} lg={{span: 6}} xl={{span: 6}}>
                     <img src={props.image} style={{width:'100%', height:'auto'}}/>
