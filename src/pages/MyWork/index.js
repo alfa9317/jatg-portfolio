@@ -4,7 +4,7 @@ import "./style.css";
 function MyWork() {
   return (
     <div>
-        <h1>Holaaaa!!!</h1>
+        <h1>Holaaaa trabajo!!!</h1>
     </div>
   );
 }
