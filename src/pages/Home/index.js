@@ -29,7 +29,7 @@ class Home extends React.Component {
                     <p>My name is José Alfredo Torres</p>
                 </Animated>
                 <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDelay={0.7} animationInDuration={4000} isVisible={true}>
-                    <p style={{margin:'200px 100px 0px 200px'}}>I'm a Full Stack Web and iOS Developer with a background in Sound Design, from Tec de Monterrey University. Effective at combining rational and objective analysis with creative and inventive solutions to develop beautiful and efficient user-friendly applications.</p>
+                    <p style={{margin:'30px 15vw 0px 15vw'}}>I'm a Full Stack Web and iOS Developer with a background in Sound Design, from Tec de Monterrey University. Effective at combining rational and objective analysis with creative and inventive solutions to develop beautiful and efficient user-friendly applications.</p>
                 </Animated>
              
                 <div className='homePageTitle' style={{fontSize:'100px'}}>...</div>
