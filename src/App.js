@@ -1,11 +1,17 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
+import Home from './pages/Home';
+import MyWork from './pages/MyWork';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hola mundo!!!</h1>
-    </div>
+    <Router>
+      <div className="App" basename={process.env.PUBLIC_URL}>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/eso" component={MyWork}/>
+      </div>
+    </Router>
   );
 }
 
