@@ -37,9 +37,9 @@ class NavBar extends Component{
                 </div>
     
                 <ul id="slide_out_1" className="sidenav">
-                    <li><Link to="/" className={window.location.pathname === "/" ? "active" : ""}>Home Page</Link></li>
-                    <li><Link to="/my-work" className={window.location.pathname === "/orders" ? "active" : ""}>My Works</Link></li>
-                    <li><Link to="/contact" className={window.location.pathname === "/about-us" ? "active" : ""}>Contact Info</Link></li>
+                    <li><Link to="/" className={window.location.pathname === "/" ? "active" : ""}><i className="material-icons">home</i> Home Page</Link></li>
+                    <li><Link to="/my-work" className={window.location.pathname === "/orders" ? "active" : ""}><i className="material-icons">list</i> My Works</Link></li>
+                    <li><Link to="/contact" className={window.location.pathname === "/about-us" ? "active" : ""}> <i className="material-icons">pan_tool</i> Contact Info</Link></li>
                 </ul>
             </div>
         );

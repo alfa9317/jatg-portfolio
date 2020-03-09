@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Mi fondita express",
+      "description": "It is a React js application, developed to offer a cheap and healthy solution to food delivery services, where the customer would be able to order from a daily menu and receive the order between a certain range of time.",
+      "image":"assets/images/project1.png"
+    },
+    {
+      "id": 2,
+      "name": "Youtify",
+      "description": "Api-based application that transforms and display your selected Spotify playlist as Youtube videos.",
+      "image": "assets/images/project2.png"
+    },
+    {
+      "id": 3,
+      "name": "Liri",
+      "description": "Liri is a program that emulates a virtual assistant like iphone's 'Siri', but Liri is a Language Interpretation and Recognition Interface that responds according to different parameters.",
+      "image": "assets/images/project3.png"
+    },
+    {
+      "id": 4,
+      "name": "Anytime is Train Time",
+      "description": "Train schedule application that incorporates Firebase to host arrival and departure data.",
+      "image": "assets/images/project4.png"
+    }
+  ]
+  
