@@ -8,7 +8,7 @@ import { Button } from 'antd';
 class Home extends React.Component {
     render(){
         return (
-            <div className="card">
+            <div>
                  {/* <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={4000} isVisible={true}>
                     <div>
                         <h1>Hello world! ;)</h1>
