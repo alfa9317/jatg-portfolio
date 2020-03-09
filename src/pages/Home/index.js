@@ -18,7 +18,7 @@ class Home extends React.Component {
                         <h1 className='homePageTitle'>¡Welcome!</h1>
                     </div>
                 </Animated>
-                <div className='container'>
+                {/* <div className='container'>
                     <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDelay={0.4} animationInDuration={3000} isVisible={true}>
                         <img alt="profilePic" src={profilePic} style={{width: '200px',height: 'auto',borderRadius: '150px', boxShadow: '0px 4px 15px 2px #888888'}}/>
                         <br/>
@@ -32,7 +32,7 @@ class Home extends React.Component {
                         <p style={{margin:'20px 100px 0px 100px'}}>I'm a Full Stack Web and iOS Developer with a background in Sound Design, from Tec de Monterrey University. Effective at combining rational and objective analysis with creative and inventive solutions to develop beautiful and efficient user-friendly applications.</p>
                     </Animated>
                 </div>
-                <div className='homePageTitle' style={{fontSize:'100px'}}>...</div>
+                <div className='homePageTitle' style={{fontSize:'100px'}}>...</div> */}
             </div>
             
           );
