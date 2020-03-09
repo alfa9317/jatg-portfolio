@@ -6,12 +6,13 @@ import MyWork from './pages/MyWork';
 
 function App() {
   return (
-    <Router>
-      <div className="App" basename={process.env.PUBLIC_URL}>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/eso" component={MyWork}/>
-      </div>
-    </Router>
+    // <Router>
+    //   <div className="App">
+    //     <Route exact path="/" component={Home} />
+    //     <Route exact path="/eso" component={MyWork}/>
+    //   </div>
+    // </Router>
+    <Home/>
   );
 }
 
