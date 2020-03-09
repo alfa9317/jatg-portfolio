@@ -2,13 +2,13 @@ import React from 'react';
 import "./style.css";
 import NavBar from "../../components/NavBar"
 
-function MyWork() {
+function Contact() {
   return (
     <div>
         <NavBar/>
-        <h1>Holaaaa trabajo!!!</h1>
+        <h1>Contacto!!!</h1>
     </div>
   );
 }
 
-export default MyWork;
+export default Contact;
