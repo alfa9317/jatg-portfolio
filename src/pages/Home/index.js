@@ -14,8 +14,8 @@ class Home extends React.Component {
                  <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1000} isVisible={true}>
                     <div>
                         <br/>
+                        <h2 className='homePageTitle' style={{fontSize:'3vw'}}>Welcome to my personal page</h2>
                         <br/>
-                        <h1 className='homePageTitle'>¡Welcome!</h1>
                     </div>
                 </Animated>
                 

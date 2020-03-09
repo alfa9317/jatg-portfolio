@@ -1,12 +1,78 @@
 import React from 'react';
 import "./style.css";
 import NavBar from "../../components/NavBar"
+import { Form, Input, InputNumber, Button,Card } from 'antd';
+
+const layout = {
+    labelCol: {
+      span: 0,
+    },
+    wrapperCol: {
+      span: 24,
+    },
+  };
+  const validateMessages = {
+    required: 'This field is required!',
+    types: {
+      email: 'Not a validate email!',
+      number: 'Not a validate number!',
+    },
+    number: {
+      range: 'Must be between ${min} and ${max}',
+    },
+  };
+  
 
 function Contact() {
+    const onFinish = values => {
+        console.log(values);
+      };
   return (
     <div>
         <NavBar/>
-        <h1>Contacto!!!</h1>
+        <Card title="Ing. José Alfredo Torres" style={{ width: '92%',margin:'20px 4vw 0 4vw' }} align='start'>
+            <p>Email: josealfredotg@gmail.com</p>
+            <p>Phone number: 443-117-3768</p>
+            <p>LinkedIn: linkedin.com/in/josealfredotorres</p>
+            <p>Github: github.com/alfa9317</p>
+        </Card>
+        <Card title="Contact Form" style={{ width: '92%',margin:'20px 4vw 0 4vw' }} align='start'>
+            <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages} align='start'>
+                <Form.Item
+                    name={['user', 'name']}
+                    label="Name"
+                    rules={[
+                    {
+                        required: true,
+                    },
+                    ]}
+                >
+                    <Input />
+                </Form.Item>
+                <Form.Item
+                    name={['user', 'email']}
+                    label="Email"
+                    rules={[
+                    {
+                        type: 'email',
+                    },
+                    ]}
+                >
+                    <Input />
+                </Form.Item>
+                <Form.Item name={['user', 'number']} label="Phone number">
+                    <Input />
+                </Form.Item>
+                <Form.Item name={['user', 'introduction']} label="Message">
+                    <Input.TextArea />
+                </Form.Item>
+                <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 0 }}>
+                    <Button style={{margin:''}}type="primary" block htmlType="submit">
+                    Submit
+                    </Button>
+                </Form.Item>
+            </Form>
+        </Card>
     </div>
   );
 }
