@@ -22,7 +22,7 @@ class NavBar extends Component{
                     <nav className=" light-blue darken-1">
                         <div className="nav-wrapper">
                             <div className="container">
-                                <a href="#" className="brandLogo left"><img id="navBarLogoImage" className="brand-logo" src={logo} style={{width:'210px',height:'auto'}}/></a>
+                                <a href="#" className="brandLogo left"><img alt='logo'id="navBarLogoImage" className="brand-logo" src={logo} style={{width:'210px',height:'auto'}}/></a>
                                 <a href="#" className="sidenav-trigger" data-target="slide_out_1"><i className="material-icons">menu</i></a>
                                 <ul className="hide-on-med-and-down right">
                                     <li>

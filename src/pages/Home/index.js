@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import {Animated} from "react-animated-css";
-import { Button } from 'antd';
 import NavBar from '../../components/NavBar'
 import profilePic from '../../img/profilePic.jpeg'
 

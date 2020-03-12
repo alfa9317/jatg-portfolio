@@ -1,8 +1,7 @@
 import React from 'react';
 import "./style.css";
 import NavBar from "../../components/NavBar"
-import { Form, Input, InputNumber, Button,Card } from 'antd';
-import { Link } from "react-router-dom";
+import { Form, Input, Button,Card } from 'antd';
 
 const layout = {
     labelCol: {
@@ -17,9 +16,6 @@ const layout = {
     types: {
       email: 'Not a validate email!',
       number: 'Not a validate number!',
-    },
-    number: {
-      range: 'Must be between ${min} and ${max}',
     },
   };
   
