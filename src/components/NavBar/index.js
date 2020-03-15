@@ -7,7 +7,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 class NavBar extends Component{
 
-    componentDidMount() {
+    UNSAFE_componentDidMount() {
         var elem = document.querySelector(".sidenav");
         var instance = M.Sidenav.init(elem, {
             edge: "left",
