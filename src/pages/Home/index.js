@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import {Animated} from "react-animated-css";
 import NavBar from '../../components/NavBar'
-import profilePic from '../../img/profilePic.jpeg'
+import profilePic from '../../assets/images/profilePic.jpeg'
 
 class Home extends React.Component {
     render(){
