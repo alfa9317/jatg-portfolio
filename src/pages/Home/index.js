@@ -1,15 +1,21 @@
 import React from "react";
 import "./style.css";
+import {makeStyles} from '@material-ui/styles';
 import {Animated} from "react-animated-css";
-import NavBar from '../../components/NavBar'
 import profilePic from '../../assets/images/profilePic.jpeg'
 
-class Home extends React.Component {
-    render(){
+const useStyles = makeStyles(theme => ({
+    main: {
+       textAlign: 'center'
+    }
+}))
+
+export default function Home(props){
+
+        const classes = useStyles();
         return (
             
-            <div>
-                <NavBar/>
+            <div className={classes.main}>
                  <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1000} isVisible={true}>
                     <div>
                         <br/>
@@ -35,7 +41,4 @@ class Home extends React.Component {
             </div>
             
           );
-    }
   }
-  
-  export default Home;

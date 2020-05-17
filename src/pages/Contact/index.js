@@ -1,6 +1,5 @@
 import React from 'react';
 import "./style.css";
-import NavBar from "../../components/NavBar"
 import { Form, Input, Button,Card } from 'antd';
 
 const layout = {
@@ -27,7 +26,6 @@ function Contact() {
       };
   return (
     <div>
-        <NavBar/>
         <Card title="Ing. José Alfredo Torres" style={{ width: '92%',margin:'20px 4vw 0 4vw' }} align='start'>
             <p>Email: josealfredotg@gmail.com</p>
             <p>Phone number: 443-117-3768</p>
