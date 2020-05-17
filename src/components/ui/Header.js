@@ -32,20 +32,26 @@ function ElevationScroll(props) {
     });
 }
 
+///Una cita con mi Pau hermosa!!!! 😍
+
 const useStyles = makeStyles(theme => ({
     toolbarMargin: {
         ...theme.mixins.toolbar,
         marginBottom: '21px',
-        [theme.breakpoints.down('sm')]: {
-            marginBottom: '11px'
+        [theme.breakpoints.down('md')]: {
+            marginBottom: '10px'
+        },
+        [theme.breakpoints.down('xs')]: {
+            marginBottom: '18px'
         }
     },
     logo: {
         height: '80px',
-        margin: 'auto',
-        textAlign:'center',
-        [theme.breakpoints.down('sm')]: {
-            height: '70px'
+        [theme.breakpoints.down('md')]: {
+            margin: 'auto',
+            textAlign: 'center',
+            maxWidth: '100%',
+            maxHeight: '70%'
         }
     },
     logoContainer: {
@@ -56,18 +62,10 @@ const useStyles = makeStyles(theme => ({
         margin: '3px 10px 3px 150px',
         [theme.breakpoints.down('md')]: {
             margin: '3px 0px 3px 0px',
-            display: 'block',
-            marginLeft: '38vw'
-        },
-        [theme.breakpoints.down('sm')]: {
-            margin: '3px 0px 3px 0px',
-            display: 'block',
-            marginLeft: '31vw'
-        },
-        [theme.breakpoints.down('xs')]: {
-            margin: '3px 0px 3px 0px',
-            display: 'block',
-            marginLeft: '28vw'
+            position: 'absolute',
+            left: '50%',
+            top: '50%',
+            transform: 'translate(-50%, -50%)'
         }
     },
     tabContainer: {
@@ -104,12 +102,14 @@ const useStyles = makeStyles(theme => ({
     },
     drawerIconContainer: {
         marginLeft: 'auto',
+        backgroundColor: theme.palette.common.blue,
         '&:hover':{
             backgroundColor: 'transparent'
         }
     },
     drawer: {
-        backgroundColor: theme.palette.common.blue
+        backgroundColor: theme.palette.common.blue,
+        width: '40vw'
     },
     drawerItem: {
         ...theme.typography.tab,
@@ -117,7 +117,7 @@ const useStyles = makeStyles(theme => ({
         opacity: 0.7
     },
     drawerItemEstimate: {
-        backgroundColor: theme.palette.common.orange
+        backgroundColor: theme.palette.common.darkBlue
     },
     drawerItemSelected: {
         '& .MuiListItemText-root': {
@@ -167,7 +167,7 @@ export default function Header(props){
 
     const tabs = (
         <React.Fragment>
-            <Tabs value={value} onChange={handleChange} indicatorColor='primary' className={classes.tabContainer}>
+            <Tabs value={value} onChange={handleChange} indicatorColor='secondary' className={classes.tabContainer}>
                 {routes.map((route,index) => (
                     <Tab key={`${route}${index}`} className={classes.tab} component={Link} disableRipple to={route.link} label={route.name} />
                 ))}
