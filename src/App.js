@@ -25,6 +25,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css'
 import theme from './components/ui/Theme';
 import Header from './components/ui/Header';
+import Footer from './components/ui/Footer';
 import Home from './pages/Home';
 import MyWork from './pages/MyWork';
 import Contact from './pages/Contact';
@@ -39,6 +40,7 @@ function App() {
           <Route exact path='/myworks' component={MyWork} />
           <Route exact path='/contact' component={Contact} />
         </Switch>
+        <Footer />
     </BrowserRouter>
     </ThemeProvider>
   );
