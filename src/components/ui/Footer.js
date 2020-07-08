@@ -1,6 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Hidden from '@material-ui/core/Hidden';
 
 import footerAdornment from '../../assets/images/Footer_Adornment_2.png';
 import linkedin from '../../assets/images/linkedin.png';
@@ -25,15 +26,7 @@ const useStyles = makeStyles(theme => ({
     },
     mainContainer: {
         position: 'absolute',
-        marginTop: '22px',
-        marginLeft: '320px',
-        [theme.breakpoints.down('md')]: {
-            marginLeft: '260px'
-        },
-        [theme.breakpoints.down('xs')]: {
-            marginLeft: '235px',
-            marginTop: '11px'
-        }
+        marginTop: '22px'
     },
     titleText: {
         color: 'white',
@@ -47,12 +40,18 @@ const useStyles = makeStyles(theme => ({
         fontSize: '1rem'
     },
     iconImage: {
-        width: '3rem'
+        width: '4rem'
     },
     socialContainer: {
         position: 'absolute',
-        marginTop: '-6em',
-        right: '1.5em'
+        marginTop: '-7.5em',
+        right: '2em',
+        [theme.breakpoints.down('md')]: {
+            marginTop: '-7em'
+        },
+        [theme.breakpoints.down('xs')]: {
+            marginTop: '-6.5em'
+        }
     }
 }))
 
@@ -61,33 +60,35 @@ export default function Footer(){
 
     return (
         <footer className={classes.footer}>
-            <Grid container justify='flex-start' alignItems='flex-start' className={classes.mainContainer}>
-                <Grid item>
-                    <Grid container direction='column' spacing={2}>
-                        <Grid item className={classes.titleText}>
-                            Contact Info <span role='img' aria-label="Email">💻</span>
-                        </Grid>
-                        <Grid container direction='column'>
-                            <Grid container direction='row' spacing={1}>
-                                <Grid item className={classes.text}>
-                                    <span role='img' aria-label="Email">🌎</span>
-                                </Grid>
-                                <Grid item className={classes.text}>
-                                    josealfredotg@gmail.com
-                                </Grid>
+            <Hidden xsDown>
+                <Grid container justify='center' className={classes.mainContainer}>
+                    <Grid item>
+                        <Grid container direction='column' spacing={2}>
+                            <Grid item className={classes.titleText}>
+                                Contact Info <span role='img' aria-label="Email">💻</span>
                             </Grid>
-                            <Grid container direction='row' spacing={1}>
-                                <Grid item className={classes.text}>
-                                    <span role='img' aria-label="Phone number">📞</span>
+                            <Grid container direction='column'>
+                                <Grid container direction='row' spacing={1}>
+                                    <Grid item className={classes.text}>
+                                        <span role='img' aria-label="Email">🌎</span>
+                                    </Grid>
+                                    <Grid item className={classes.text}>
+                                        josealfredotg@gmail.com
+                                    </Grid>
                                 </Grid>
-                                <Grid item className={classes.text}>
-                                    (443) 117 3768
+                                <Grid container direction='row' spacing={1}>
+                                    <Grid item className={classes.text}>
+                                        <span role='img' aria-label="Phone number">📞</span>
+                                    </Grid>
+                                    <Grid item className={classes.text}>
+                                        (443) 117 3768
+                                    </Grid>
                                 </Grid>
                             </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
-            </Grid>
+            </Hidden>
             <img alt='footbar decoration' src={footerAdornment} className={classes.adornment}/>
             <Grid container justify='flex-end' spacing={2} className={classes.socialContainer}>
                 <Grid item component={'a'} href='https://github.com/alfa9317' rel='noopener noreferrer' target='_blank'>
