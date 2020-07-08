@@ -7,6 +7,7 @@ import footerAdornment from '../../assets/images/Footer_Adornment_2.png';
 import linkedin from '../../assets/images/linkedin.png';
 import github from '../../assets/images/github.png';
 import emailme from '../../assets/images/emailme.png';
+import phoneme from '../../assets/images/phoneme.png';
 
 const useStyles = makeStyles(theme => ({
     footer: {
@@ -22,7 +23,7 @@ const useStyles = makeStyles(theme => ({
             width: '17em'
         },
         [theme.breakpoints.down('sm')]: {
-            width: '15em'
+            width: '11em'
         }
     },
     mainContainer: {
@@ -54,7 +55,7 @@ const useStyles = makeStyles(theme => ({
             marginTop: '-7em'
         },
         [theme.breakpoints.down('sm')]: {
-            marginTop: '-6.5em'
+            marginTop: '-5.5em'
         }
     }
 }))
@@ -103,6 +104,9 @@ export default function Footer(){
                 </Grid>
                 <Grid item component={'a'} href='mailto:josealfredotg@gmail.com? subject=subject text' id="email-link" rel='noopener noreferrer' target='_blank'>
                     <img alt='email me' src={emailme} className={classes.iconImage}/>
+                </Grid>
+                <Grid item component={'a'} href='tel:4431173768' id="phone-link" rel='noopener noreferrer' target='_blank'>
+                    <img alt='phone me' src={phoneme} className={classes.iconImage}/>
                 </Grid>
             </Grid>
          </footer>
