@@ -23,12 +23,15 @@ const useStyles = makeStyles(theme => ({
             width: '17em'
         },
         [theme.breakpoints.down('sm')]: {
-            width: '11em'
+            width: '14em'
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: '12em'
         }
     },
     mainContainer: {
         position: 'absolute',
-        marginTop: '1.9vh'
+        marginTop: '2.5%'
     },
     titleText: {
         color: 'white',
@@ -55,7 +58,10 @@ const useStyles = makeStyles(theme => ({
             marginTop: '-7em'
         },
         [theme.breakpoints.down('sm')]: {
-            marginTop: '-5.5em'
+            marginTop: '-6em'
+        },
+        [theme.breakpoints.down('xs')]: {
+            marginTop: '-5.1em'
         }
     }
 }))
@@ -66,29 +72,31 @@ export default function Footer(){
     return (
         <footer className={classes.footer}>
             <Hidden smDown>
-                <Grid container justify='center' className={classes.mainContainer}>
+                <Grid container justify='center' className={classes.mainContainer} spacing={1}>
                     <Grid item>
                         <Grid container direction='column' spacing={2}>
                             <Grid item className={classes.titleText}>
-                                Contact Info <span role='img' aria-label="Email">💻</span>
+                                Contact information
                             </Grid>
-                            <Grid container direction='column'>
-                                <Grid container direction='row' spacing={1}>
-                                    <Grid item className={classes.text}>
-                                        <span role='img' aria-label="Email">🌎</span>
-                                    </Grid>
-                                    <Grid item className={classes.text}>
-                                        josealfredotg@gmail.com
-                                    </Grid>
-                                </Grid>
-                                <Grid container direction='row' spacing={1}>
-                                    <Grid item className={classes.text}>
-                                        <span role='img' aria-label="Phone number">📞</span>
-                                    </Grid>
-                                    <Grid item className={classes.text}>
-                                        (443) 117 3768
-                                    </Grid>
-                                </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid item>
+                        <Grid container direction='column' spacing={2}>
+                            <Grid item className={classes.text}>
+                                <span role='img' aria-label="Email">🌎</span>
+                            </Grid>
+                            <Grid item className={classes.text}>
+                                <span role='img' aria-label="Phone number">📞</span>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid item>
+                        <Grid container direction='column' spacing={2}>
+                            <Grid item className={classes.text}>
+                                josealfredotg@gmail.com
+                            </Grid>
+                            <Grid item className={classes.text}>
+                                (443) 117 3768
                             </Grid>
                         </Grid>
                     </Grid>
