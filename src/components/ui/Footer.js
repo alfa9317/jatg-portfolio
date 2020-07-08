@@ -20,24 +20,24 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('md')]: {
             width: '17em'
         },
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.down('sm')]: {
             width: '15em'
         }
     },
     mainContainer: {
         position: 'absolute',
-        marginTop: '22px'
+        marginTop: '1.9vh'
     },
     titleText: {
         color: 'white',
         fontFamily: 'Mukta',
-        fontSize: '1.5rem',
+        fontSize: '1.5em',
         fontWeight: 'bold'
     },
     text: {
         color: 'white',
         fontFamily: 'Mukta',
-        fontSize: '1rem'
+        fontSize: '1em'
     },
     iconImage: {
         width: '4rem'
@@ -49,7 +49,7 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('md')]: {
             marginTop: '-7em'
         },
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.down('sm')]: {
             marginTop: '-6.5em'
         }
     }
