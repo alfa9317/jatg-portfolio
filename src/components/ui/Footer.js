@@ -6,6 +6,7 @@ import Hidden from '@material-ui/core/Hidden';
 import footerAdornment from '../../assets/images/Footer_Adornment_2.png';
 import linkedin from '../../assets/images/linkedin.png';
 import github from '../../assets/images/github.png';
+import emailme from '../../assets/images/emailme.png';
 
 const useStyles = makeStyles(theme => ({
     footer: {
@@ -40,7 +41,10 @@ const useStyles = makeStyles(theme => ({
         fontSize: '1em'
     },
     iconImage: {
-        width: '4rem'
+        width: '4rem',
+        [theme.breakpoints.down('xs')]: {
+            width: '3rem'
+        }
     },
     socialContainer: {
         position: 'absolute',
@@ -60,7 +64,7 @@ export default function Footer(){
 
     return (
         <footer className={classes.footer}>
-            <Hidden xsDown>
+            <Hidden smDown>
                 <Grid container justify='center' className={classes.mainContainer}>
                     <Grid item>
                         <Grid container direction='column' spacing={2}>
@@ -96,6 +100,9 @@ export default function Footer(){
                 </Grid>
                 <Grid item component={'a'} href='https://www.linkedin.com/in/josealfredotorres/' rel='noopener noreferrer' target='_blank'>
                     <img alt='linkedin logo' src={linkedin} className={classes.iconImage}/>
+                </Grid>
+                <Grid item component={'a'} href='mailto:josealfredotg@gmail.com? subject=subject text' id="email-link" rel='noopener noreferrer' target='_blank'>
+                    <img alt='email me' src={emailme} className={classes.iconImage}/>
                 </Grid>
             </Grid>
          </footer>
