@@ -8,6 +8,8 @@ import linkedin from '../../assets/images/linkedin.png';
 import github from '../../assets/images/github.png';
 import emailme from '../../assets/images/emailme.png';
 import phoneme from '../../assets/images/phoneme.png';
+import cvdownload from '../../assets/images/cvdownload.png';
+import pdf from '../../assets/CV-JoseAlfredoTorres.pdf'
 
 const useStyles = makeStyles(theme => ({
     footer: {
@@ -26,7 +28,7 @@ const useStyles = makeStyles(theme => ({
             width: '14em'
         },
         [theme.breakpoints.down('xs')]: {
-            width: '12em'
+            width: '16em'
         }
     },
     mainContainer: {
@@ -45,9 +47,9 @@ const useStyles = makeStyles(theme => ({
         fontSize: '1em'
     },
     iconImage: {
-        width: '4rem',
+        width: '3.8rem',
         [theme.breakpoints.down('xs')]: {
-            width: '3rem'
+            width: '2.5rem'
         }
     },
     socialContainer: {
@@ -61,7 +63,8 @@ const useStyles = makeStyles(theme => ({
             marginTop: '-6em'
         },
         [theme.breakpoints.down('xs')]: {
-            marginTop: '-5.1em'
+            right: '1em',
+            marginTop: '-8em'
         }
     }
 }))
@@ -71,7 +74,7 @@ export default function Footer(){
 
     return (
         <footer className={classes.footer}>
-            <Hidden smDown>
+            <Hidden mdDown>
                 <Grid container justify='center' className={classes.mainContainer} spacing={1}>
                     <Grid item>
                         <Grid container direction='column' spacing={2}>
@@ -103,20 +106,54 @@ export default function Footer(){
                 </Grid>
             </Hidden>
             <img alt='footbar decoration' src={footerAdornment} className={classes.adornment}/>
+           <Hidden xsDown>
             <Grid container justify='flex-end' spacing={2} className={classes.socialContainer}>
-                <Grid item component={'a'} href='https://github.com/alfa9317' rel='noopener noreferrer' target='_blank'>
-                    <img alt='github logo' src={github} className={classes.iconImage}/>
+                    <Grid item component={'a'} href='https://github.com/alfa9317' rel='noopener noreferrer' target='_blank'>
+                        <img alt='github logo' src={github} className={classes.iconImage}/>
+                    </Grid>
+                    <Grid item component={'a'} href='https://www.linkedin.com/in/josealfredotorres/' rel='noopener noreferrer' target='_blank'>
+                        <img alt='linkedin logo' src={linkedin} className={classes.iconImage}/>
+                    </Grid>
+                    <Grid item component={'a'} href='mailto:josealfredotg@gmail.com? subject=subject text' id="email-link" rel='noopener noreferrer' target='_blank'>
+                        <img alt='email me' src={emailme} className={classes.iconImage}/>
+                    </Grid>
+                    <Grid item  component={'a'} href='tel:4431173768' id="phone-link" rel='noopener noreferrer' target='_blank'>
+                        <img alt='phone me' src={phoneme} className={classes.iconImage}/>
+                    </Grid>
+                    <Grid item component={'a'} href={pdf} id="cv-link" rel='noopener noreferrer' target='_blank'>
+                        <img alt='cv dowload' src={cvdownload} className={classes.iconImage}/>
+                    </Grid>
                 </Grid>
-                <Grid item component={'a'} href='https://www.linkedin.com/in/josealfredotorres/' rel='noopener noreferrer' target='_blank'>
-                    <img alt='linkedin logo' src={linkedin} className={classes.iconImage}/>
+           </Hidden>
+          
+           <Hidden smUp>
+                <Grid container direction='column' alignItems='flex-end' spacing={2} className={classes.socialContainer}>
+                    <Grid item>
+                        <Grid container direction='row' justify="space-evenly" alignItems="center" spacing={3}>
+                            <Grid item component={'a'} href='https://github.com/alfa9317' rel='noopener noreferrer' target='_blank'>
+                                <img alt='github logo' src={github} className={classes.iconImage}/>
+                            </Grid>
+                            <Grid item component={'a'} href='https://www.linkedin.com/in/josealfredotorres/' rel='noopener noreferrer' target='_blank'>
+                                <img alt='linkedin logo' src={linkedin} className={classes.iconImage}/>
+                            </Grid>
+                            <Grid item component={'a'} href='mailto:josealfredotg@gmail.com? subject=subject text' id="email-link" rel='noopener noreferrer' target='_blank'>
+                                <img alt='email me' src={emailme} className={classes.iconImage}/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid item>
+                        <Grid container direction="row" justify="center" alignItems="center" spacing={3}>
+                            <Grid item  component={'a'} href='tel:4431173768' id="phone-link" rel='noopener noreferrer' target='_blank'>
+                                <img alt='phone me' src={phoneme} className={classes.iconImage}/>
+                            </Grid>
+                            <Grid item component={'a'} href={pdf} id="cv-link" rel='noopener noreferrer' target='_blank'>
+                                <img alt='cv dowload' src={cvdownload} className={classes.iconImage}/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
                 </Grid>
-                <Grid item component={'a'} href='mailto:josealfredotg@gmail.com? subject=subject text' id="email-link" rel='noopener noreferrer' target='_blank'>
-                    <img alt='email me' src={emailme} className={classes.iconImage}/>
-                </Grid>
-                <Grid item component={'a'} href='tel:4431173768' id="phone-link" rel='noopener noreferrer' target='_blank'>
-                    <img alt='phone me' src={phoneme} className={classes.iconImage}/>
-                </Grid>
-            </Grid>
+            </Hidden>
+           
          </footer>
     );
         
