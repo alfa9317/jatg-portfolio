@@ -129,7 +129,7 @@ export default function Footer(){
            <Hidden smUp>
                 <Grid container direction='column' alignItems='flex-end' spacing={1} className={classes.socialContainer}>
                     <Grid item>
-                        <Grid container direction='row' justify="space-evenly" alignItems="center" spacing={2}>
+                        <Grid container direction='row' alignItems="center" spacing={2}>
                             <Grid item component={'a'} href='https://github.com/alfa9317' rel='noopener noreferrer' target='_blank'>
                                 <img alt='github logo' src={github} className={classes.iconImage}/>
                             </Grid>
