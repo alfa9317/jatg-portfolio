@@ -49,7 +49,7 @@ const useStyles = makeStyles(theme => ({
     iconImage: {
         width: '3.8rem',
         [theme.breakpoints.down('xs')]: {
-            width: '2.5rem'
+            width: '3rem'
         }
     },
     socialContainer: {
@@ -63,8 +63,8 @@ const useStyles = makeStyles(theme => ({
             marginTop: '-6em'
         },
         [theme.breakpoints.down('xs')]: {
-            right: '1em',
-            marginTop: '-8em'
+            right: '1.5em',
+            marginTop: '-7.7em'
         }
     }
 }))
@@ -127,9 +127,9 @@ export default function Footer(){
            </Hidden>
           
            <Hidden smUp>
-                <Grid container direction='column' alignItems='flex-end' spacing={2} className={classes.socialContainer}>
+                <Grid container direction='column' alignItems='flex-end' spacing={1} className={classes.socialContainer}>
                     <Grid item>
-                        <Grid container direction='row' justify="space-evenly" alignItems="center" spacing={3}>
+                        <Grid container direction='row' justify="space-evenly" alignItems="center" spacing={2}>
                             <Grid item component={'a'} href='https://github.com/alfa9317' rel='noopener noreferrer' target='_blank'>
                                 <img alt='github logo' src={github} className={classes.iconImage}/>
                             </Grid>
@@ -142,7 +142,7 @@ export default function Footer(){
                         </Grid>
                     </Grid>
                     <Grid item>
-                        <Grid container direction="row" justify="center" alignItems="center" spacing={3}>
+                        <Grid container direction="row" justify="center" alignItems="center" spacing={2}>
                             <Grid item  component={'a'} href='tel:4431173768' id="phone-link" rel='noopener noreferrer' target='_blank'>
                                 <img alt='phone me' src={phoneme} className={classes.iconImage}/>
                             </Grid>
