@@ -51,6 +51,7 @@ export default function MyWork(props){
                         description={info.description}
                         url={info.url}
                         github={info.github}
+                        technologies={info.technologies}
                         />
                     </Animated>
                 ))}

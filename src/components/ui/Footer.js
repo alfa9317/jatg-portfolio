@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     },
     mainContainer: {
         position: 'absolute',
-        marginTop: '2.5%'
+        marginTop: '2.7%'
     },
     titleText: {
         color: 'white',
@@ -85,7 +85,7 @@ export default function Footer(){
                         </Grid>
                     </Grid>
                     <Grid item>
-                        <Grid container direction='column' spacing={2}>
+                        <Grid container direction='column' spacing={1}>
                             <Grid item className={classes.text}>
                                 <span role='img' aria-label="Email">🌎</span>
                             </Grid>
@@ -95,7 +95,7 @@ export default function Footer(){
                         </Grid>
                     </Grid>
                     <Grid item>
-                        <Grid container direction='column' spacing={2}>
+                        <Grid container direction='column' spacing={1}>
                             <Grid item className={classes.text}>
                                 josealfredotg@gmail.com
                             </Grid>

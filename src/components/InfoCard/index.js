@@ -3,17 +3,38 @@ import "./style.css";
 import {makeStyles} from '@material-ui/styles';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import HttpIcon from '@material-ui/icons/Http';
+import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import { Card, Row, Col } from 'antd';
 
 const useStyles = makeStyles(theme => ({
     httpIcon: {
         fontSize: '3.5em',
-        color: theme.palette.common.darkBlue
+        color: theme.palette.common.darkBlue,
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '3em',
+            color: theme.palette.common.darkBlue
+        }
     },
     gitIcon: {
         fontSize: '2em',
-        color: theme.palette.common.darkBlue
+        color: theme.palette.common.darkBlue,
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '1.5em',
+            color: theme.palette.common.darkBlue
+        }
+    },
+    techText: {
+        fontSize: '1rem',
+        fontWeight: 'bold'
+    },
+    techBackground: {
+        borderRadius: '5px 15px',
+        backgroundColor: theme.palette.common.blue,
+        boxShadow: '0px 1px 4px 0px #888888'
+    },
+    techContainer: {
+        padding: '5px'
     }
 }))
 
@@ -25,7 +46,7 @@ function InfoCard (props) {
 
             <Card title={props.name} align='start' style={{margin:'20px 0 20px 0',boxShadow: '0px 1px 4px 0px #888888'}}
                 extra={
-                        <Grid container spacing={3} direction="row" alignItems="center">
+                        <Grid container spacing={2} direction="row" alignItems="center">
                             <Grid item component={'a'} href={props.url} target="_blank" rel="noopener noreferrer">
                                 <HttpIcon className={classes.httpIcon}/>
                             </Grid>
@@ -43,6 +64,29 @@ function InfoCard (props) {
                         <p>{props.description}</p>
                     </Col>
                 </Row>
+                <Card>
+                    <Grid container>
+                        <Grid item>
+                            <Grid container spacing={2} direction="row" alignItems="center">
+                                <Grid item className={classes.techText}>
+                                    Technologies:
+                                </Grid>
+                            </Grid>
+                            <Grid container spacing={2} direction="row" alignItems="center" className={classes.techContainer}>
+                                {props.technologies.map(tech => (
+                                    <Grid item>
+                                       <Box className={classes.techBackground} color="info.contrastText" p={0.8}>
+                                            {tech}
+                                        </Box>
+                                    </Grid>
+                                ))}
+                                
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                        
+                    
+                </Card>
             </Card>
     );
 }
