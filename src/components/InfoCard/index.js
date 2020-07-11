@@ -29,7 +29,7 @@ function InfoCard (props) {
                             <Grid item component={'a'} href={props.url} target="_blank" rel="noopener noreferrer">
                                 <HttpIcon className={classes.httpIcon}/>
                             </Grid>
-                            <Grid item component={'a'} href={props.url} target="_blank" rel="noopener noreferrer">
+                            <Grid item component={'a'} href={props.github} target="_blank" rel="noopener noreferrer">
                                 <GitHubIcon className={classes.gitIcon}/>
                             </Grid>
                         </Grid>
