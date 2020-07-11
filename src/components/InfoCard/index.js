@@ -5,6 +5,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import HttpIcon from '@material-ui/icons/Http';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
+import Fade from '@material-ui/core/Fade';
 import { Card, Row, Col } from 'antd';
 
 const useStyles = makeStyles(theme => ({
@@ -47,9 +48,11 @@ function InfoCard (props) {
             <Card title={props.name} align='start' style={{margin:'20px 0 20px 0',boxShadow: '0px 1px 4px 0px #888888'}}
                 extra={
                         <Grid container spacing={2} direction="row" alignItems="center">
-                            <Grid item component={'a'} href={props.url} target="_blank" rel="noopener noreferrer">
-                                <HttpIcon className={classes.httpIcon}/>
-                            </Grid>
+                            <Fade in={(props.url)!=="null"} unmountOnExit={true}>
+                                <Grid item component={'a'} href={props.url} target="_blank" rel="noopener noreferrer">
+                                        <HttpIcon className={classes.httpIcon}/>    
+                                </Grid>
+                            </Fade>
                             <Grid item component={'a'} href={props.github} target="_blank" rel="noopener noreferrer">
                                 <GitHubIcon className={classes.gitIcon}/>
                             </Grid>

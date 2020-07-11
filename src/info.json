@@ -22,7 +22,7 @@
       "name": "Liri",
       "description": "Liri is a program that emulates a virtual assistant like iphone's 'Siri', but Liri is a Language Interpretation and Recognition Interface that responds according to different parameters.",
       "image": "worksImages/project3.png",
-      "url": "https://github.com/alfa9317/liri-node-app",
+      "url": "null",
       "github": "https://github.com/alfa9317/liri-node-app",
       "technologies":["HTML5","CSS","JavaScript"]
     },
