@@ -4,28 +4,32 @@
       "name": "Mi fondita express",
       "description": "It is a React js application, developed to offer a cheap and healthy solution to food delivery services, where the customer would be able to order from a daily menu and receive the order between a certain range of time.",
       "image":"worksImages/project1.png",
-      "url": "https://mi-fondita-express.herokuapp.com"
+      "url": "https://mi-fondita-express.herokuapp.com",
+      "github": "https://github.com/alfa9317/MexFood-App"
     },
     {
       "id": 2,
       "name": "Youtify",
       "description": "Api-based application that transforms and display your selected Spotify playlist as Youtube videos.",
       "image": "worksImages/project2.png",
-      "url": "https://alecvipa.github.io/Youtify/"
+      "url": "https://alecvipa.github.io/Youtify/",
+      "github": "https://github.com/alecvipa/Youtify"
     },
     {
       "id": 3,
       "name": "Liri",
       "description": "Liri is a program that emulates a virtual assistant like iphone's 'Siri', but Liri is a Language Interpretation and Recognition Interface that responds according to different parameters.",
       "image": "worksImages/project3.png",
-      "url": "https://github.com/alfa9317/liri-node-app"
+      "url": "https://github.com/alfa9317/liri-node-app",
+      "github": "https://github.com/alfa9317/liri-node-app"
     },
     {
       "id": 4,
       "name": "Anytime is Train Time",
       "description": "Train schedule application that incorporates Firebase to host arrival and departure data.",
       "image": "worksImages/project4.png",
-      "url": "https://alfa9317.github.io/Train_Activity/index.html"
+      "url": "https://alfa9317.github.io/Train_Activity/index.html",
+      "github": "https://github.com/alfa9317/Anytime-Train"
     }
   ]
   

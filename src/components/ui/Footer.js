@@ -16,7 +16,8 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: 'gray',
         width: '100%',
         zIndex: 1302,
-        position: 'relative ' 
+        position: 'relative ',
+        marginTop: '80px' 
     },
     adornment: {
         width: '19em',
