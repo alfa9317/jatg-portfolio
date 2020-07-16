@@ -6,7 +6,7 @@
       "image":"worksImages/project1.png",
       "url": "https://mi-fondita-express.herokuapp.com",
       "github": "https://github.com/alfa9317/MexFood-App",
-      "technologies":["HTML5","CSS","JavaScript","ReactJS"]
+      "technologies":["HTML5","CSS","JavaScript","ReactJS","Materialize","Ant Design","MySQL","NodeJS","Express","Firebase"]
     },
     {
       "id": 2,
@@ -15,7 +15,7 @@
       "image": "worksImages/project2.png",
       "url": "https://alecvipa.github.io/Youtify/",
       "github": "https://github.com/alecvipa/Youtify",
-      "technologies":["HTML5","CSS","JavaScript"]
+      "technologies":["HTML5","CSS","JavaScript","JQuery","NodeJS","Express","Materialize"]
     },
     {
       "id": 3,
@@ -24,7 +24,7 @@
       "image": "worksImages/project3.png",
       "url": "null",
       "github": "https://github.com/alfa9317/liri-node-app",
-      "technologies":["HTML5","CSS","JavaScript"]
+      "technologies":["JavaScript","NodeJS"]
     },
     {
       "id": 4,
@@ -33,7 +33,7 @@
       "image": "worksImages/project4.png",
       "url": "https://alfa9317.github.io/Anytime-Train",
       "github": "https://github.com/alfa9317/Anytime-Train",
-      "technologies":["HTML5","CSS","JavaScript"]
+      "technologies":["HTML5","CSS","JavaScript","Firebase","Bootstrap","Moment.js"]
     }
   ]
   
