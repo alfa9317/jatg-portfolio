@@ -25,7 +25,7 @@ function Contact() {
         window.location.href = `mailto:josealfredotg@gmail.com?subject=Contact Info&body=${values.user.name}%0D${values.user.email}%0D${values.user.number}%0D${values.user.introduction}`;
       };
   return (
-    <div>
+    <div style={{ marginTop:'70px' }}>
         <Card title="Ing. José Alfredo Torres" style={{ width: '92%',margin:'20px 4vw 0 4vw' }} align='start'>
             <p>Email: josealfredotg@gmail.com</p>
             <p>Phone number: 443-117-3768</p>
