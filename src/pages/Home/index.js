@@ -68,53 +68,58 @@ export default function Home(props){
 
                 <Divider variant="middle" className={classes.divider} />
 
-                <h3 className={classes.subtitle}>Skills</h3>
-
-                <Grid container className={classes.logoContainer} justify='center' alignItems="center">
-                    <Grid item>
-                        <img alt='html5 logo' src={html5} className={classes.logo}/>
+                <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1000} isVisible={true}>
+                    <h3 className={classes.subtitle}>Skills</h3>
+                </Animated>
+                
+                <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={2000} isVisible={true}>
+                    <Grid container className={classes.logoContainer} justify='center' alignItems="center">
+                        <Grid item>
+                            <img alt='html5 logo' src={html5} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='css logo' src={css} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='js logo' src={js} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='react logo' src={react} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='material-ui logo' src={materialui} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='swift logo' src={swift} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='node logo' src={node} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='jquery logo' src={jquery} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='mern logo' src={mern} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='antdesign logo' src={antdesign} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='materialize logo' src={materialize} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='github logo' src={github} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='firebase logo' src={firebase} className={classes.logo}/>
+                        </Grid>
+                        <Grid item>
+                            <img alt='mysql logo' src={mysql} className={classes.logo}/>
+                        </Grid>
                     </Grid>
-                    <Grid item>
-                        <img alt='css logo' src={css} className={classes.logo}/>
-                    </Grid>
-                    <Grid item>
-                        <img alt='js logo' src={js} className={classes.logo}/>
-                    </Grid>
-                    <Grid item>
-                        <img alt='react logo' src={react} className={classes.logo}/>
-                    </Grid>
-                    <Grid item>
-                        <img alt='material-ui logo' src={materialui} className={classes.logo}/>
-                    </Grid>
-                    <Grid item>
-                        <img alt='swift logo' src={swift} className={classes.logo}/>
-                    </Grid>
-                    <Grid item>
-                        <img alt='node logo' src={node} className={classes.logo}/>
-                    </Grid>
-                    <Grid item>
-                        <img alt='jquery logo' src={jquery} className={classes.logo}/>
-                    </Grid>
-                    <Grid item>
-                        <img alt='mern logo' src={mern} className={classes.logo}/>
-                    </Grid>
-                    <Grid item>
-                        <img alt='antdesign logo' src={antdesign} className={classes.logo}/>
-                    </Grid>
-                    <Grid item>
-                        <img alt='materialize logo' src={materialize} className={classes.logo}/>
-                    </Grid>
-                    <Grid item>
-                        <img alt='github logo' src={github} className={classes.logo}/>
-                    </Grid>
-                    <Grid item>
-                        <img alt='firebase logo' src={firebase} className={classes.logo}/>
-                    </Grid>
-                    <Grid item>
-                        <img alt='mysql logo' src={mysql} className={classes.logo}/>
-                    </Grid>
-                </Grid>
-
+                </Animated>
+                
+                
             </div>
             
           );
