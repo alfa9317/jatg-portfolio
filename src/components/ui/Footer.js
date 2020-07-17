@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 
 import footerAdornment from '../../assets/images/Footer_Adornment_2.png';
+import footerAdornmentMobile from '../../assets/images/Footer_Adornment_Mobile.png';
 import linkedin from '../../assets/images/linkedin.png';
 import github from '../../assets/images/github.png';
 import emailme from '../../assets/images/emailme.png';
@@ -61,11 +62,11 @@ const useStyles = makeStyles(theme => ({
             marginTop: '-7em'
         },
         [theme.breakpoints.down('sm')]: {
-            marginTop: '-6em'
+            marginTop: '-6.2em'
         },
         [theme.breakpoints.down('xs')]: {
             right: '1.5em',
-            marginTop: '-7.7em'
+            marginTop: '-4.7em'
         }
     }
 }))
@@ -106,54 +107,30 @@ export default function Footer(){
                     </Grid>
                 </Grid>
             </Hidden>
-            <img alt='footbar decoration' src={footerAdornment} className={classes.adornment}/>
+        
            <Hidden xsDown>
-            <Grid container justify='flex-end' spacing={2} className={classes.socialContainer}>
-                    <Grid item component={'a'} href='https://github.com/alfa9317' rel='noopener noreferrer' target='_blank'>
-                        <img alt='github logo' src={github} className={classes.iconImage}/>
-                    </Grid>
-                    <Grid item component={'a'} href='https://www.linkedin.com/in/josealfredotorres/' rel='noopener noreferrer' target='_blank'>
-                        <img alt='linkedin logo' src={linkedin} className={classes.iconImage}/>
-                    </Grid>
-                    <Grid item component={'a'} href='mailto:josealfredotg@gmail.com? subject=subject text' id="email-link" rel='noopener noreferrer' target='_blank'>
-                        <img alt='email me' src={emailme} className={classes.iconImage}/>
-                    </Grid>
-                    <Grid item  component={'a'} href='tel:4431173768' id="phone-link" rel='noopener noreferrer' target='_blank'>
-                        <img alt='phone me' src={phoneme} className={classes.iconImage}/>
-                    </Grid>
-                    <Grid item component={'a'} href={pdf} id="cv-link" rel='noopener noreferrer' target='_blank'>
-                        <img alt='cv dowload' src={cvdownload} className={classes.iconImage}/>
-                    </Grid>
-                </Grid>
+            <img alt='footbar decoration' src={footerAdornment} className={classes.adornment}/>
            </Hidden>
-          
            <Hidden smUp>
-                <Grid container direction='column' alignItems='flex-end' spacing={1} className={classes.socialContainer}>
-                    <Grid item>
-                        <Grid container direction='row' alignItems="center" spacing={2}>
-                            <Grid item component={'a'} href='https://github.com/alfa9317' rel='noopener noreferrer' target='_blank'>
-                                <img alt='github logo' src={github} className={classes.iconImage}/>
-                            </Grid>
-                            <Grid item component={'a'} href='https://www.linkedin.com/in/josealfredotorres/' rel='noopener noreferrer' target='_blank'>
-                                <img alt='linkedin logo' src={linkedin} className={classes.iconImage}/>
-                            </Grid>
-                            <Grid item component={'a'} href='mailto:josealfredotg@gmail.com? subject=subject text' id="email-link" rel='noopener noreferrer' target='_blank'>
-                                <img alt='email me' src={emailme} className={classes.iconImage}/>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                    <Grid item>
-                        <Grid container direction="row" justify="center" alignItems="center" spacing={2}>
-                            <Grid item  component={'a'} href='tel:4431173768' id="phone-link" rel='noopener noreferrer' target='_blank'>
-                                <img alt='phone me' src={phoneme} className={classes.iconImage}/>
-                            </Grid>
-                            <Grid item component={'a'} href={pdf} id="cv-link" rel='noopener noreferrer' target='_blank'>
-                                <img alt='cv dowload' src={cvdownload} className={classes.iconImage}/>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                </Grid>
+                <img alt='footbar decoration' src={footerAdornmentMobile} className={classes.adornment}/>
             </Hidden>
+            <Grid container justify='flex-end' spacing={2} className={classes.socialContainer}>
+                <Grid item component={'a'} href='https://github.com/alfa9317' rel='noopener noreferrer' target='_blank'>
+                    <img alt='github logo' src={github} className={classes.iconImage}/>
+                </Grid>
+                <Grid item component={'a'} href='https://www.linkedin.com/in/josealfredotorres/' rel='noopener noreferrer' target='_blank'>
+                    <img alt='linkedin logo' src={linkedin} className={classes.iconImage}/>
+                </Grid>
+                <Grid item component={'a'} href='mailto:josealfredotg@gmail.com? subject=subject text' id="email-link" rel='noopener noreferrer' target='_blank'>
+                    <img alt='email me' src={emailme} className={classes.iconImage}/>
+                </Grid>
+                <Grid item  component={'a'} href='tel:4431173768' id="phone-link" rel='noopener noreferrer' target='_blank'>
+                    <img alt='phone me' src={phoneme} className={classes.iconImage}/>
+                </Grid>
+                <Grid item component={'a'} href={pdf} id="cv-link" rel='noopener noreferrer' target='_blank'>
+                    <img alt='cv dowload' src={cvdownload} className={classes.iconImage}/>
+                </Grid>
+            </Grid>
            
          </footer>
     );
