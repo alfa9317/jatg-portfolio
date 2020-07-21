@@ -36,6 +36,15 @@ const useStyles = makeStyles(theme => ({
     },
     techContainer: {
         padding: '5px'
+    },
+    description:{
+        fontSize: '1.4rem',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1.2rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '1rem'
+        }
     }
 }))
 
@@ -64,7 +73,7 @@ function InfoCard (props) {
                         <img alt= 'project' src={props.image} style={{width:'100%', height:'auto'}}/>
                     </Col>
                     <Col xs={{span: 22}} sm={{span: 22}} md={{span: 12, offset:2}} lg={{span: 15, offset:2}} xl={{span: 15, offset:1}} >
-                        <p>{props.description}</p>
+                        <p className={classes.description}>{props.description}</p>
                     </Col>
                 </Row>
                 <Card>

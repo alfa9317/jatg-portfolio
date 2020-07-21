@@ -23,7 +23,11 @@ import mysql from '../../assets/images/skills/mysql.png';
 
 const useStyles = makeStyles(theme => ({
     main: {
-       textAlign: 'center'
+       textAlign: 'center',
+       marginTop: '40px',
+       [theme.breakpoints.down('xs')]: {
+        marginTop: '30px'
+    }
     },
     divider: {
         margin: '100px 10vw 50px 10vw'
@@ -32,10 +36,27 @@ const useStyles = makeStyles(theme => ({
         marginBottom: '100px'
     },
     logo: {
-        width: '10rem'
+        width: '10rem',
+        [theme.breakpoints.down('md')]: {
+            width: '8rem'
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: '6rem'
+        }
     },
     subtitle:{
-        marginBottom: '50px'
+        fontSize: '2.9rem',
+        marginBottom: '50px',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '2.5rem'
+        }
+    },
+    homePageTitle:{
+        fontFamily: 'Mukta',
+        fontSize: '3.2rem',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '1.8rem'
+        }
     }
 }))
 
@@ -48,7 +69,7 @@ export default function Home(props){
                  <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={1000} isVisible={true}>
                     <div>
                         <br/>
-                        <h2 className='homePageTitle' style={{fontSize:'3vw'}}>Welcome to my personal page</h2>
+                        <h2 className={classes.homePageTitle}>Welcome to my personal page</h2>
                         <br/>
                     </div>
                 </Animated>
