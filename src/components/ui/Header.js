@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
         }
     },
     logo: {
-        height: '80px',
+        height: '70px',
         [theme.breakpoints.down('md')]: {
             margin: 'auto',
             textAlign: 'center',

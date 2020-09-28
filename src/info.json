@@ -10,30 +10,48 @@
     },
     {
       "id": 2,
+      "name": "The Clicky Game",
+      "description": "Rick and Morty Clicky Game is a virtual memory game created with ReactJS and MaterialUI",
+      "image": "worksImages/project2.png",
+      "url": "https://alfa9317.github.io/the-clicky-game/",
+      "github": "https://github.com/alfa9317/the-clicky-game",
+      "technologies":["HTML5","CSS","JavaScript","ReactJS","NodeJS","MaterialUI","React-Router","Github Pages"]
+    },
+    {
+      "id": 3,
       "name": "Youtify",
       "description": "Api-based application that transforms and display your selected Spotify playlist as Youtube videos.",
-      "image": "worksImages/project2.png",
+      "image": "worksImages/project3.png",
       "url": "https://alecvipa.github.io/Youtify/",
       "github": "https://github.com/alecvipa/Youtify",
       "technologies":["HTML5","CSS","JavaScript","JQuery","NodeJS","Express","Materialize"]
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Liri",
       "description": "Liri is a program that emulates a virtual assistant like iphone's 'Siri', but Liri is a Language Interpretation and Recognition Interface that responds according to different parameters.",
-      "image": "worksImages/project3.png",
+      "image": "worksImages/project4.png",
       "url": "null",
       "github": "https://github.com/alfa9317/liri-node-app",
       "technologies":["JavaScript","NodeJS"]
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Anytime is Train Time",
       "description": "Train schedule application that incorporates Firebase to host arrival and departure data.",
-      "image": "worksImages/project4.png",
+      "image": "worksImages/project5.png",
       "url": "https://alfa9317.github.io/Anytime-Train",
       "github": "https://github.com/alfa9317/Anytime-Train",
       "technologies":["HTML5","CSS","JavaScript","Firebase","Bootstrap","Moment.js"]
+    },
+    {
+      "id": 6,
+      "name": "Denstela",
+      "description": "Dental Clinic Website currently under construction.",
+      "image": "worksImages/project6.png",
+      "url": "https://www.denstela.com",
+      "github": "https://github.com/alfa9317/Denstela",
+      "technologies":["HTML5","CSS","JavaScript","ReactJS","NodeJS","MaterialUI","Ant-Design","React-Router","Netlify"]
     }
   ]
   
